@@ -1,1 +1,4 @@
-MySQL Design - Ten taki box z zak³adkami to "Datagrid"
+MySQL Design.jpg - Ten taki box z zak³adkami to "Datagrid"
+MySQL connection.jpg - wygooglowaæ MySQL Connectors, pobraæ ADO.NET Driver, w projekcie odwo³ania -> dodaj odwo³anie, Zestawy -> Rozszerzenia, MySQL.Data i frameworki (nie framework core)
+
+Praca z baz¹ - otwieraæ i zamykaæ po³¹czenie dla ka¿dej operacji

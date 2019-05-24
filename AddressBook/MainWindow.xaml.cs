@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +26,40 @@ namespace AddressBook
             InitializeComponent();
         }
 
-        private void BTest_Click(object sender, RoutedEventArgs e)
+        MySqlConnection connection;
+        string myconnection;
+
+        private void BConnect_Click(object sender, RoutedEventArgs e)
         {
-            lTest.Content = tbTest.Text;
+            if (bConnect.Content.ToString() != "Disconnect")
+            {
+                myconnection = "SERVER=" + tbServer.Text + ";" +
+                    "DATABASE=" + tbDatabase.Text + ";" +
+                    "UID=" + tbUid.Text + ";" +
+                    "PASSWORD=" + tbPassword.Text + ";" +
+                    "SslMode=none" + ";";
+                connection = new MySqlConnection(myconnection);
+
+                try
+                {
+                    connection.Open();
+                    bConnect.Content = "Disconnect";
+                    lConnection.Content = "Connected";
+                    bGetdata.IsEnabled = true;
+                }
+                catch (MySql.Data.MySqlClient.MySqlException ex)
+                {
+                    MessageBox.Show(ex.ToString(), "MySQL Connection Error",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+            }
+            else
+            {
+                bConnect.Content = "Connect";
+                lConnection.Content = "No connection";
+                bGetdata.IsEnabled = false;
+                connection.Close();
+            }
         }
     }
 }
