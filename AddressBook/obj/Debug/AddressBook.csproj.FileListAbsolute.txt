@@ -1,0 +1,15 @@
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\bin\Debug\AddressBook.exe.config
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\bin\Debug\AddressBook.exe
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\bin\Debug\AddressBook.pdb
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.csprojAssemblyReference.cache
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\MainWindow.g.cs
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\App.g.cs
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook_MarkupCompile.cache
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook_MarkupCompile.lref
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\MainWindow.baml
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.g.resources
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.Properties.Resources.resources
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.GenerateResource.cache
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.csproj.CoreCompileInputs.cache
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.exe
+C:\Users\Dyrcz Jakub\Desktop\Repos\AddressBook\AddressBook\obj\Debug\AddressBook.pdb
