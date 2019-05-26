@@ -40,3 +40,27 @@ C:\Users\Dyrcz Jakub\Desktop\Repos\snail-address-book\AddressBook\obj\Debug\Addr
 C:\Users\Dyrcz Jakub\Desktop\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.csproj.CopyComplete
 C:\Users\Dyrcz Jakub\Desktop\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.exe
 C:\Users\Dyrcz Jakub\Desktop\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.pdb
+S:\Repos\snail-address-book\AddressBook\bin\Debug\AddressBook.exe.config
+S:\Repos\snail-address-book\AddressBook\bin\Debug\AddressBook.exe
+S:\Repos\snail-address-book\AddressBook\bin\Debug\AddressBook.pdb
+S:\Repos\snail-address-book\AddressBook\bin\Debug\Google.Protobuf.dll
+S:\Repos\snail-address-book\AddressBook\bin\Debug\BouncyCastle.Crypto.dll
+S:\Repos\snail-address-book\AddressBook\bin\Debug\MySql.Data.EntityFrameworkCore.dll
+S:\Repos\snail-address-book\AddressBook\bin\Debug\MySql.Data.xml
+S:\Repos\snail-address-book\AddressBook\bin\Debug\MySql.Data.EntityFramework.xml
+S:\Repos\snail-address-book\AddressBook\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
+S:\Repos\snail-address-book\AddressBook\bin\Debug\MySql.Data.EntityFrameworkCore.xml
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.csprojAssemblyReference.cache
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.exe.config
+S:\Repos\snail-address-book\AddressBook\obj\Debug\MainWindow.g.cs
+S:\Repos\snail-address-book\AddressBook\obj\Debug\App.g.cs
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook_MarkupCompile.cache
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook_MarkupCompile.lref
+S:\Repos\snail-address-book\AddressBook\obj\Debug\MainWindow.baml
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.g.resources
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.Properties.Resources.resources
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.csproj.GenerateResource.cache
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.csproj.CoreCompileInputs.cache
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.csproj.CopyComplete
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.exe
+S:\Repos\snail-address-book\AddressBook\obj\Debug\AddressBook.pdb

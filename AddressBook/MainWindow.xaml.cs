@@ -26,6 +26,13 @@ namespace AddressBook
             InitializeComponent();
         }
 
+        public struct Contact
+        {
+            public int ID { get; set; }
+            public string Name { get; set; }
+            public int Age { get; set; }
+        }
+
         MySqlConnection connection;
         string myconnection;
 
@@ -59,6 +66,101 @@ namespace AddressBook
                 lConnection.Content = "No connection";
                 bGetdata.IsEnabled = false;
                 connection.Close();
+            }
+        }
+
+        private void BGetdata_Click(object sender, RoutedEventArgs e)
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `snail-address-book`", connection);
+            try
+            {
+                connection.Close();
+            }
+            catch { }
+            dgDisplay.Items.Clear();
+            myconnection = "SERVER=" + tbServer.Text + ";" +
+                     "DATABASE=" + tbDatabase.Text + ";" +
+                     "UID=" + tbUid.Text + ";" +
+                     "PASSWORD=" + tbPassword.Text + ";" +
+                     "SslMode=none" + ";";
+            connection.Open();
+
+            using (var record = command.ExecuteReader())
+            {
+                while (record.Read())
+                {
+                    Contact contact = new Contact();
+                    contact.ID = int.Parse(record["ID"].ToString());
+                    contact.Name = record["Name"].ToString();
+                    contact.Age = int.Parse(record["Age"].ToString());
+                    dgDisplay.Items.Add(contact);
+                }
+            }
+
+            bEdit.IsEnabled = true;
+        }
+
+        private void TbEditID_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+
+            if (tbEditID.Text.ToString() != "")
+            {
+                bEdit.Content = "Edit";
+            }
+            else
+            {
+                bEdit.Content = "Add";
+            }
+        }
+
+        private void BEdit_Click(object sender, RoutedEventArgs e)
+        {
+            MySqlCommand command;
+            if (bEdit.Content.ToString() == "Add")
+            {
+                command = new MySqlCommand("INSERT INTO `snail-address-book` (`name`, `age`) VALUES ('" + tbEditName.Text + "', " + tbEditAge.Text + ")", connection);
+            }
+            else
+            {
+                command = new MySqlCommand("UPDATE `snail-address-book` SET `name` = '" + tbEditName.Text + "', `age` = " + tbEditAge.Text + " WHERE `snail-address-book`.`id` = " + tbEditID.Text, connection);
+            }
+
+            try
+            {
+                connection.Close();
+            }
+            catch { }
+            dgDisplay.Items.Clear();
+            myconnection = "SERVER=" + tbServer.Text + ";" +
+                     "DATABASE=" + tbDatabase.Text + ";" +
+                     "UID=" + tbUid.Text + ";" +
+                     "PASSWORD=" + tbPassword.Text + ";" +
+                     "SslMode=none" + ";";
+            connection.Open();
+
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch
+            {
+                MessageBox.Show("Incorrect input", "UPDATE Error",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+
+            command = new MySqlCommand("SELECT * FROM `snail-address-book`", connection);
+            // Read stuff
+            using (var record = command.ExecuteReader())
+            {
+                while (record.Read())
+                {
+                    Contact contact = new Contact();
+                    contact.ID = int.Parse(record["ID"].ToString());
+                    contact.Name = record["Name"].ToString();
+                    contact.Age = int.Parse(record["Age"].ToString());
+                    dgDisplay.Items.Add(contact);
+                }
             }
         }
     }
