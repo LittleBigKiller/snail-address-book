@@ -5,11 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AddressBook"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350.448" Width="420.721" ResizeMode="NoResize">
+        Title="Snail Address Book" Height="332.964" Width="421.554" ResizeMode="NoResize">
     <Grid Margin="0,0,2,-21">
         <Grid.RowDefinitions>
-            <RowDefinition Height="92*"/>
-            <RowDefinition Height="79*"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <DataGrid x:Name="dgDisplay" HorizontalAlignment="Left" Height="170" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="True">
             <DataGrid.Columns>
@@ -18,23 +17,24 @@
                 <DataGridTextColumn Binding="{Binding Age}" ClipboardContentBinding="{x:Null}" Header="Age" Width="40"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="lServer" Content="Server" HorizontalAlignment="Left" Margin="215,10,0,0" VerticalAlignment="Top" Width="58"/>
-        <Label x:Name="lDatabase" Content="Database" HorizontalAlignment="Left" Margin="215,36,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lUid" Content="UID" HorizontalAlignment="Left" Margin="215,62,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lPassword" Content="Password" HorizontalAlignment="Left" Margin="215,88,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="bConnect" Content="Connect" HorizontalAlignment="Left" Margin="215,119,0,0" VerticalAlignment="Top" Width="75" Click="BConnect_Click"/>
-        <Button x:Name="bGetdata" Content="Get Data" HorizontalAlignment="Left" Margin="215,160,0,0" VerticalAlignment="Top" Width="184" IsEnabled="False" Click="BGetdata_Click"/>
-        <Label x:Name="lConnection" Content="No Connection" HorizontalAlignment="Left" Margin="295,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lServer" Content="Server" HorizontalAlignment="Left" Margin="215,10,0,0" VerticalAlignment="Top" Width="58" Height="26"/>
+        <Label x:Name="lDatabase" Content="Database" HorizontalAlignment="Left" Margin="215,36,0,0" VerticalAlignment="Top" Height="26" Width="59"/>
+        <Label x:Name="lUid" Content="UID" HorizontalAlignment="Left" Margin="215,62,0,0" VerticalAlignment="Top" Height="26" Width="30"/>
+        <Label x:Name="lPassword" Content="Password" HorizontalAlignment="Left" Margin="215,88,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Button x:Name="bConnect" Content="Connect" HorizontalAlignment="Left" Margin="215,119,0,0" VerticalAlignment="Top" Width="75" Click="BConnect_Click" Height="20"/>
+        <Button x:Name="bGetdata" Content="Get Data" HorizontalAlignment="Left" Margin="215,160,0,0" VerticalAlignment="Top" Width="184" IsEnabled="False" Click="BGetdata_Click" Height="20"/>
+        <Label x:Name="lConnection" Content="No Connection" HorizontalAlignment="Left" Margin="295,116,0,0" VerticalAlignment="Top" Height="26" Width="90"/>
         <TextBox x:Name="tbServer" HorizontalAlignment="Left" Height="23" Margin="279,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="127.0.0.1"/>
         <TextBox x:Name="tbDatabase" HorizontalAlignment="Left" Height="23" Margin="279,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="ask"/>
         <TextBox x:Name="tbUid" HorizontalAlignment="Left" Height="23" Margin="279,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="root"/>
         <TextBox x:Name="tbPassword" HorizontalAlignment="Left" Height="23" Margin="279,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lEditID" Content="ID" HorizontalAlignment="Left" Margin="215,181,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
-        <Label x:Name="lEditName" Content="Name" HorizontalAlignment="Left" Margin="215,25,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-        <Label x:Name="lEditAge" Content="Age" HorizontalAlignment="Left" Margin="215,53,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-        <TextBox x:Name="tbEditID" HorizontalAlignment="Left" Height="23" Margin="279,1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TbEditID_TextChanged" Grid.Row="1" Text="asd"/>
-        <TextBox x:Name="tbEditName" HorizontalAlignment="Left" Height="23" Margin="279,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" Text="asd"/>
-        <TextBox x:Name="tbEditAge" HorizontalAlignment="Left" Height="23" Margin="279,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" Text="asd"/>
-        <Button x:Name="bEdit" Content="Edit" HorizontalAlignment="Left" Margin="215,85,0,0" VerticalAlignment="Top" Width="184" IsEnabled="False" Click="BEdit_Click" Grid.Row="1"/>
+        <Label x:Name="lEditID" Content="ID" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <Label x:Name="lEditName" Content="Name" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+        <Label x:Name="lEditAge" Content="Age" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top" Height="26" Width="31"/>
+        <TextBox x:Name="tbEditID" HorizontalAlignment="Left" Height="23" Margin="74,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" TextChanged="TbEditID_TextChanged"/>
+        <TextBox x:Name="tbEditName" HorizontalAlignment="Left" Height="23" Margin="74,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <TextBox x:Name="tbEditAge" HorizontalAlignment="Left" Height="23" Margin="74,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136"/>
+        <Button x:Name="bEdit" Content="Add" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="200" IsEnabled="False" Click="BEdit_Click" Height="20"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="215,185,0,0" xml:space="preserve" TextWrapping="Wrap" Text="- Fill the 'ID' field with a valid ID to edit&#10;- Invalid ID will yield no results&#10;- ID and Age must be a number&#10;- No text in the ID field will lead to adding a new record" VerticalAlignment="Top" Height="104" Width="184"/>
     </Grid>
 </Window>
