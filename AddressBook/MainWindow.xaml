@@ -10,7 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="dgDisplay" HorizontalAlignment="Left" Height="170" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="True">
+        <DataGrid x:Name="dgDisplay" HorizontalAlignment="Left" Height="170" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden" ScrollViewer.CanContentScroll="True" Focusable="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding ID}" ClipboardContentBinding="{x:Null}" Header="ID" Width="30"/>
                 <DataGridTextColumn Binding="{Binding Name}" ClipboardContentBinding="{x:Null}" Header="Name" Width="130"/>
